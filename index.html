@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<meta charset="UTF-8">
+  <title>Libookrary</title>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+<h1>Libookrary</h1>
+
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img id="myImg" src="http://img.filecdn.xyz/upload/7f1ed714997220ce9f052a274577671a.jpg" alt="Mountains" style="width:100%;max-width:400px">
+      <!--<h4>Saotome Shimai wa Manga no tame nara!?</h4>
+      <p>Lorem ipsum dolor..</p>-->
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img id="myImg" src="http://img.filecdn.xyz/upload/7f1ed714997220ce9f052a274577671a.jpg" alt="Lights" style="width:100%;max-width:400px">
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img id="myImg" src="http://img.filecdn.xyz/upload/7f1ed714997220ce9f052a274577671a.jpg" alt="Nature" style="width:100%;max-width:400px">
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img id="myImg" src="https://mangayome.com/wp-content/uploads/2018/12/91voSWxcccL.jpg" alt="Car" style="width:100%;max-width:400px">
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img id="myImg" src="https://mangayome.com/wp-content/uploads/2018/12/91voSWxcccL.jpg" alt="Car" style="width:100%;max-width:400px">
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img id="myImg" src="https://mangayome.com/wp-content/uploads/2018/12/91voSWxcccL.jpg" alt="Car" style="width:100%;max-width:400px">
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img id="myImg" src="http://www.shonenjump.com/j/comics/_comicimage/saotome003.jpg" alt="Car" style="width:100%;max-width:400px">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img id="myImg" src="http://www.shonenjump.com/j/comics/_comicimage/saotome003.jpg" alt="Car" style="width:100%;max-width:400px">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img id="myImg" src="http://www.shonenjump.com/j/comics/_comicimage/saotome003.jpg" alt="Car" style="width:100%;max-width:400px">
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+ <!-- The Close Button -->
+ <span class="close">&times;</span>
+ <!-- Modal Content (The Image) -->
+ <!--<img class="modal-content" id="img01">-->
+
+ <iframe class="modal-content" src="pdfjs/web/viewer.html?file=../../docs/indexedDB.pdf" onload="this.width=screen.width;this.height=screen.height;"></iframe>
+ <!-- Modal Caption (Image Text) -->
+ <!--<canvas id="pdf"></canvas>-->
+ <!--<div id="caption"></div>-->
+
+
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
